@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/357f1cd54e.js" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="top-bar">
+            <span><i class="fa-solid fa-angle-left"></i></span>
+            <span>Sia Album</span>
+            <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+
+        <div class="image-wrapper">
+            <div class="music-image">
+                <img src="images/alive.jpg">
+            </div>
+        </div>
+
+        <div class="music-titles">
+            <p class="name">Alive</p>
+            <p class="artist">Sia</p>
+        </div>
+
+        <div class="progress-details">
+            <div class="progress-bar">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="time">
+            <span class="current">0:00</span>
+            <span class="final">6:00</span>
+        </div>
+
+        <div class="control-btn">
+            <span><i class="fa-solid fa-backward" id="backward"></i></span>
+            <div class="play-pause">
+                <span><i class="fa-solid fa-play"></i></span>
+            </div>
+            <span><i class="fa-solid fa-forward" id="forward"></i></span>
+        </div>
+
+        <audio src="Songs/Sia - Alive.mp3" class="main-song" controls></audio>
+            
+    </div>
+</body>
+<script src="playlist.js"></script>
+<script src="script.js"></script>
+</html>
